@@ -27,10 +27,10 @@ const Home = () => {
 
   return (
     <div className="bg-gray-500 text-white ">
-      <div className="w-screen shadow-md py-6 px-3 bg-gray-700 text-white mb-16">
+      <div className="w-screen shadow-md p-5 bg-gray-700 text-white mb-16">
         <div className="flex container mx-auto">
           <h1 className="font-bold text-xl">Assignment</h1>
-          <div className="ml-auto font-medium">
+          <div className="ml-auto font-medium mr-3">
             <button onClick={() => refreshHandler()}>Refresh</button>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Home = () => {
       {loading ? (
         <span className="text-gray-300">Loading...</span>
       ) : (
-        <div className="container grid grid-cols-4 gap-16 mx-auto mr-5">
+        <div className="container grid grid-cols-4 gap-16 mx-auto pl-2">
           {countries.map((country, index) => (
             <Thumbnail
               title={country.name}
